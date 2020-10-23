@@ -1,5 +1,5 @@
 one:
-	mkdir -p ../check && [cp ../src/*.py ../check
+	mkdir -p ../check && cp ../src/*.py ../check
 	python3 ../check/Task-1.py | grep "['8', '7', '6', '6', '7', '8']"
 
 two:
@@ -16,4 +16,4 @@ four:
 
 five:
 	mkdir -p ../check && cp ../src/*.py ../check
-	python3 ../check/Task-5.py | grep "['1.1.1.1', '2.2.2.2', '3.3.3.3', '4.4.4.4']" output.txt
+	python3 ../check/Task-5.py | grep "['1.1.1.1', '2.2.2.2', '3.3.3.3', '4.4.4.4']"

@@ -2,7 +2,8 @@ import re
 
 pattern = r'.'
 
-text = '''
+# Example text to search:
+'''
 space
 space1
 apple
@@ -10,5 +11,3 @@ apple
 brush
 brush3
 '''
-
-print(re.findall(pattern, text, re.MULTILINE))

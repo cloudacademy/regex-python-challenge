@@ -2,6 +2,5 @@ import re
 
 pattern = r'.'
 
-text = 'https://cloudacademy.com'
-
-print(re.findall(pattern, text))
+# Example text to search:
+# 'https://cloudacademy.com'

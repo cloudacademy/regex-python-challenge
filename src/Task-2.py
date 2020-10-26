@@ -2,6 +2,5 @@ import re
 
 pattern = r'.'
 
-text = 'hop hoop hooop hoooop hooooop'
-
-print(re.findall(pattern, text))
+# Example text to search:
+# 'hop hoop hooop hoooop hooooop'

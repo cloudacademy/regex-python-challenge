@@ -1,3 +1,4 @@
+
 text = '''
 user1 GET /endpoint 1.1.1.1 200
 user2 POST /endpoint 2.2.2.2 201

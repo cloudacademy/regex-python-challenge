@@ -11,4 +11,4 @@ brush
 brush3
 '''
 
-print(re.findall(pattern, text))
+print(re.findall(pattern, text, re.MULTILINE))

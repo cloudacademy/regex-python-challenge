@@ -5,3 +5,4 @@ user1 PUT /endpoint 3.3.3.3 500
 user1 PATCH /endpoint 4.4.4.4 401
 '''
 
+print(re.findall(pattern, text, re.MULTILINE))

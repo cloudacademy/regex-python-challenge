@@ -11,3 +11,7 @@ apple
 brush
 brush3
 '''
+
+# Should match:
+# ['space1', '2apple', 'brush3']
+

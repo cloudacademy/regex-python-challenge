@@ -1,12 +1,14 @@
-check=$1
-file=$2
-expected=$3
+(
+        check=$1
+        file=$2
+        expected=$3
 
-rm -rf ../check/$check
-mkdir -p ../check/$check
-cp ../src/$file ../check/$check
-echo "\n" >> ../check/$check/$file
-cat ./texts/$check.py >> ../check/$check/$file
+        tmpsrcfile=$(mktemp /tmp/check.XXXXXX.py)
+        tmpoutfile=$(mktemp /tmp/check.XXXXXX.txt)
 
-python3 ../check/$check/$file > ../check/$check/output.txt
-grep -q "$expected" ../check/$check/output.txt
+        cp ../src/$file $tmpsrcfile
+        cat ./texts/$check.py >>$tmpsrcfile
+
+        python3 $tmpsrcfile >$tmpoutfile
+        grep -q "$expected" $tmpoutfile
+)

@@ -1,6 +1,4 @@
-lock_dir="../script.lock"
-
-while ! mkdir $lock_dir 2>/dev/null; do
+while ! mkdir ../script.lock 2>/dev/null; do
     sleep 1
 done
 
@@ -17,4 +15,4 @@ cat ./texts/$check.py >> ../check/$check/$file
 python3 ../check/$check/$file > output.txt
 grep "$expected" output.txt
 
-rm -rf $lock_dir
+rm -rf ../script.lock

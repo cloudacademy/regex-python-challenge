@@ -1,7 +1,3 @@
-while ! mkdir ../script.lock 2>/dev/null; do
-    sleep 1
-done
-
 check=$1
 file=$2
 expected=$3
@@ -12,7 +8,5 @@ cp ../src/$file ../check/$check
 echo "\n" >> ../check/$check/$file
 cat ./texts/$check.py >> ../check/$check/$file
 
-python3 ../check/$check/$file > output.txt
-grep "$expected" output.txt
-
-rm -rf ../script.lock
+python3 ../check/$check/$file > output-$check.txt
+grep "$expected" output-$check.txt

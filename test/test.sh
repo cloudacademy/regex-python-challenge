@@ -9,4 +9,4 @@ echo "\n" >> ../check/$check/$file
 cat ./texts/$check.py >> ../check/$check/$file
 
 python3 ../check/$check/$file > ../check/$check/output.txt
-grep "$expected" ../check/$check/output.txt
+grep -q "$expected" ../check/$check/output.txt

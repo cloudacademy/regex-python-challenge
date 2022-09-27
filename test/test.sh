@@ -1,5 +1,3 @@
-set -x
-
 lock_dir="../script.lock"
 
 while ! mkdir $lock_dir 2>/dev/null; do
